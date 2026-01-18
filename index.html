@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeria Ojira - Creative Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header class="header">
+        <nav>
+            <ul class="flex-row">
+                <li>
+                    <a href="index.html">
+                        <img class="logo" src="media/logo_color.svg" alt="Ojira logo" loading="lazy">
+                    </a>
+                </li>
+                <li><a class="link" href="#about">ABOUT</a></li>
+                <li><a class="link" href="portfolio.html">PORTFOLIO</a></li>
+                <li><a class="link" href="#contact">CONTACT</a></li>
+                <li id="menu"><a href="#"><i class="ri-menu-line"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HEADER END-->
+
+    <!-- MENU POPUP -->
+
+    <div id="menu-popup"></div>
+
+    <!-- MENU POPUP END-->
+
+    <main>
+        <!-- BANNER -->
+        <section class="banner section">
+            <div class="banner__background">
+                <div class="banner__block flex-column">
+                    <div>
+                        <h1 class="text--xl">VALERIA OJIRA</h1>
+                    </div>
+                    <div class="flex-row">
+                        <h4 class="text--sm">COMMUNICATION SPECIALIST</h4>
+                        <i class="ri-shining-2-fill"></i>
+                        <h4 class="text--sm">UX / UI DESIGNER</h4>
+                        <i class="ri-shining-2-fill"></i>
+                        <h4 class="text--sm">CREATIVE DIRECTOR</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BANNER END -->
+
+        <!-- ABOUT ME -->
+        <section class="aboutMe section" id="about">
+            <div class="aboutMe__block container flex-row">
+                <div class="aboutMe__img">
+                    <picture>
+                        <source srcset="media/about.webp" type="image/webp">
+                        <img src="media/about.jpg" alt="About Me Image" loading="lazy">
+                    </picture>
+                </div>
+                <div class="aboutMe__text flex-column">
+                    <h2 class="text--lg">About me</h2>
+                    <p class="body">Hi, I’m Val! 👋
+                        I’m a communications specialist with 5+ years of experience bringing ideas to life through
+                        digital media, creative projects, and art direction. I’ve completed two specialization programs
+                        in digital marketing, content creation, storytelling, and branding — and I’m deeply passionate
+                        about UX/UI design, with a Master’s in Web Design to back it up. I love crafting meaningful,
+                        beautiful experiences that connect people, brands, and stories 💜.
+                    </p>
+                    <h4 class="text--sm">Why not reach out?</h4>
+                    <div class="aboutMe__logos flex-row">
+                        <a href="https://www.linkedin.com/in/valeria-ojira-13048a205/" class="btn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="mailto:valeojira@gmail.com" class="btn" title="Send Mail"><i
+                                class="ri-mail-fill"></i></a>
+                        <a href="tel:+5215538099691" class="btn" title="Phone Call"><i class="ri-phone-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT ME END -->
+
+        <!-- SKILLS -->
+        <section class="skills section">
+            <div class="skills__block flex-column">
+                <h2 class="text--lg">Let’s see what I can do...</h2>
+                <div class="skills__grid index__grid container">
+                    <div class="skills__card">
+                        <div class="skills__card-text flex-column">
+                            <h3 class="text--md">Design</h3>
+                            <p class="body">Digital design, UX/UI, Social Media content</p>
+                            <a href="portfolio.html#design" class="btn" title="See more">See more <i
+                                    class="ri-arrow-right-up-long-line"></i></a>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="media/skills_design.webp" type="image/webp">
+                                <img src="media/skills_design.jpg" alt="Design Image" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="skills__card">
+                        <div class="skills__card-text flex-column">
+                            <h3 class="text--md">Marketing & Communication</h3>
+                            <p class="body">Social strategies, Branding, Campaign Development</p>
+                            <a href="portfolio.html#branding" class="btn" title="See more">See more <i
+                                    class="ri-arrow-right-up-long-line"></i></a>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="media/skills_marketing.webp" type="image/webp">
+                                <img src="media/skills_marketing.jpg" alt="Marketing Image" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SKILLS END -->
+
+
+        <!-- SNEAK PEEK -->
+        <section class="preview section">
+            <div class="preview__block flex-column">
+                <h2 class="text--lg">Want a Sneak Peek?</h2>
+                <div class="preview__grid">
+                    <div class="carousel shadow"><button class="btn--light"><i class="ri-pause-line"></i></button></div>
+                    <div class="carousel shadow"><button class="btn--light"><i class="ri-pause-line"></i></button></div>
+                    <div class="carousel shadow"><button class="btn--light"><i class="ri-pause-line"></i></button></div>
+                </div>
+            </div>
+        </section>
+        <!-- SNEAK PEEK END-->
+
+        <!-- PROGRAMS AND TOOLS -->
+        <section class="programs section">
+            <div class="programs__block flex-column">
+                <h2 class="text--lg">Programs and Tools</h2>
+                <div class="programs__grid container">
+                    <div><img src="media/toolsOne.svg" alt="Adobe Photoshop" loading="lazy"></div>
+                    <div><img src="media/toolsTwo.svg" alt="Adobe Premiere Pro" loading="lazy"></div>
+                    <div><img src="media/toolsThree.svg" alt="Adobe Lightroom" loading="lazy"></div>
+                    <div><img src="media/toolsFour.svg" alt="Adobe Audition" loading="lazy"></div>
+                    <div><img src="media/toolsFive.svg" alt="Figma" loading="lazy"></div>
+                    <div><img src="media/toolsSix.svg" alt="Visual Studio Code" loading="lazy"></div>
+                    <div><img src="media/toolsSeven.svg" alt="Adobe Dreamweaver" loading="lazy"></div>
+                    <div><img src="media/toolsEight.svg" alt="Maze" loading="lazy"></div>
+                    <div><img src="media/toolsNine.svg" alt="Adobe Illustrator" loading="lazy"></div>
+                    <div><img src="media/toolsTen.svg" alt="Adobe InDesign" loading="lazy"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- PROGRAMS AND TOOLS END -->
+
+        <!-- CONTACT -->
+
+        <section class="contact section" id="contact">
+            <div class="contact__block container flex-row">
+
+                <div class="contact__image">
+                    <picture>
+                        <source srcset="media/contact.webp" type="image/webp">
+                        <img src="media/contact.jpg" alt="Contact Image" loading="lazy">
+                    </picture>
+                </div>
+
+                <div class="contact__form flex-column">
+                    <h2 class="text--lg">Reach out!</h2>
+                    <p class="p">Have a project, a job or something exciting in mind? Feel free to reach out to me with
+                        fun news!</p>
+
+                    <form action="#" method="GET" class="flex-column">
+                        <div class="flex-row">
+                            <input class="form__input body" id="name" name="name" type="text" placeholder="Name">
+                            <input class="form__input body" id="surname" name="surname" type="text"
+                                placeholder="Surname">
+                        </div>
+
+                        <label for="email"></label>
+                        <input class="form__input body" id="email" name="email" type="email" placeholder="E-mail">
+
+                        <label for="message"></label>
+                        <input class="form__input body" id="message" name="message" type="text" placeholder="Message">
+
+                        <div class="flex-row">
+                            <label for="privacy"></label>
+                            <input type="checkbox" id="privacy" name="privacy">
+                            <span class="text--s">I have read and accept the <b>privacy policy</b></span>
+                        </div>
+                        <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT END-->
+
+
+    </main>
+
+</body>
+
+</html>
