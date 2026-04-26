@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
 /* RESET */
 
 * {
@@ -34,7 +32,7 @@ body {
 
 :root {
     /* Fonts */
-    --f-heading-xl: 700 clamp(2.2rem, 6vw, 3.5rem) "Josefin Sans", sans-serif;
+    --f-heading-xl: 700 clamp(2.5rem, 6vw, 3.5rem) "Josefin Sans", sans-serif;
     /* h1 */
     --f-heading-lg: 500 clamp(1.75rem, 4vw, 2.25rem) "Josefin Sans", sans-serif;
     /* h2 */
@@ -307,7 +305,7 @@ header {
     color: var(--c-light);
 
     & .banner__background {
-        background-image: linear-gradient(#937effb1), url('../media/bannerIndex.gif');
+        background-image: linear-gradient(rgba(147, 126, 255, 0.694)), url('../media/bannerIndex.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -325,10 +323,10 @@ header {
                 gap: var(--s-lg);
                 text-align: center;
                 justify-content: center;
+                align-items: center;
 
                 h1 {
                     overflow-wrap: break-word;
-
                 }
             }
 
@@ -650,7 +648,7 @@ header {
     & .contact {
         & .contact__block {
             flex-direction: column;
-            padding: 0px;
+            padding: 0;
 
             & .contact__image {
                 order: 1;
@@ -674,10 +672,14 @@ header {
                 div {
                     align-items: center;
                     flex-direction: column;
-                    gap: var(--s-xs);
+                    gap: var(--s-md);
 
                     h1 {
                         text-wrap: wrap;
+                    }
+                    
+                    i {
+                        display: none;
                     }
                 }
 
@@ -737,7 +739,7 @@ header {
 
     & .branding {
         & .branding__block {
-            padding: 0px;
+            padding: 0;
 
             & .branding__content {
                 flex-direction: column;
@@ -749,7 +751,7 @@ header {
                     grid-auto-columns: 100%;
                     overflow: auto;
                     gap: 0;
-                    padding: 10px;
+                    padding: var(--s-sm);
                     width: 100%;
                     scrollbar-width: thin;
                     scrollbar-color: var(--c-secondary) var(--c-light);
@@ -948,8 +950,10 @@ header {
                 grid-template-columns: repeat(2, 1fr);
                 gap: var(--g-sm);
 
-                & div {
+                & button {
                     position: relative;
+                    border-radius: var(--r-sm);
+                    border-style: none;
 
                     & span {
                         background-color: #937eff7f;

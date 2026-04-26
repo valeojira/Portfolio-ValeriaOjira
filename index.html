@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valeria Ojira - Creative Portfolio</title>
+    <title>Valeria Ojira - Home</title>
     <link rel="stylesheet" href="css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
     <script defer src="js/index.js"></script>
+    <link rel="icon" type="image/svg+xml" href="media/logo_color.svg">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Valeria Ojira - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valeojira.github.io/Portfolio-ValeriaOjira/index.html">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/valeojira/Portfolio-ValeriaOjira/refs/heads/main/media/home_preview.jpg">
 </head>
 
 <body>
@@ -21,9 +29,9 @@
                         <img class="logo" src="media/logo_color.svg" alt="Ojira logo" loading="lazy">
                     </a>
                 </li>
-                <li><a class="link" href="#about">ABOUT</a></li>
-                <li><a class="link" href="portfolio.html">PORTFOLIO</a></li>
-                <li><a class="link" href="#contact">CONTACT</a></li>
+                <li><a class="link" href="#about" title="Learn more about me">ABOUT</a></li>
+                <li><a class="link" href="portfolio.html" title="See my work">PORTFOLIO</a></li>
+                <li><a class="link" href="#contact" title="Contact me">CONTACT</a></li>
                 <li id="menu"><a href="#"><i class="ri-menu-line"></i></a></li>
             </ul>
         </nav>
@@ -46,11 +54,11 @@
                         <h1 class="text--xl">VALERIA OJIRA</h1>
                     </div>
                     <div class="flex-row">
-                        <h4 class="text--sm">COMMUNICATION SPECIALIST</h4>
+                        <h2 class="text--lg">MEDIA SPECIALIST</h2>
                         <i class="ri-shining-2-fill"></i>
-                        <h4 class="text--sm">UX / UI DESIGNER</h4>
+                        <h2 class="text--lg">UX/UI DESIGN</h2>
                         <i class="ri-shining-2-fill"></i>
-                        <h4 class="text--sm">CREATIVE DIRECTOR</h4>
+                        <h2 class="text--lg">CREATIVE DIRECTOR</h2>
                     </div>
                 </div>
             </div>
@@ -77,7 +85,8 @@
                     </p>
                     <h4 class="text--sm">Why not reach out?</h4>
                     <div class="aboutMe__logos flex-row">
-                        <a href="https://www.linkedin.com/in/valeria-ojira-13048a205/" class="btn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/valeria-ojira-13048a205/" class="btn" title="LinkedIn"
+                            target="_blank" rel="noopener noreferrer">
                             <i class="ri-linkedin-fill"></i>
                         </a>
                         <a href="mailto:valeojira@gmail.com" class="btn" title="Send Mail"><i
@@ -134,9 +143,9 @@
             <div class="preview__block flex-column">
                 <h2 class="text--lg">Want a Sneak Peek?</h2>
                 <div class="preview__grid">
-                    <div class="carousel shadow"><button class="btn--light"><i class="ri-pause-line"></i></button></div>
-                    <div class="carousel shadow"><button class="btn--light"><i class="ri-pause-line"></i></button></div>
-                    <div class="carousel shadow"><button class="btn--light"><i class="ri-pause-line"></i></button></div>
+                    <div class="carousel shadow"><button class="btn--light" title="pause"><i class="ri-pause-line"></i></button></div>
+                    <div class="carousel shadow"><button class="btn--light" title="pause"><i class="ri-pause-line"></i></button></div>
+                    <div class="carousel shadow"><button class="btn--light" title="pause"><i class="ri-pause-line"></i></button></div>
                 </div>
             </div>
         </section>
@@ -181,16 +190,17 @@
                         fun news!</p>
 
                     <form action="#" method="GET" class="flex-column">
+                        <label for="name" class="text--s">Name</label>
                         <div class="flex-row">
                             <input class="form__input body" id="name" name="name" type="text" placeholder="Name">
                             <input class="form__input body" id="surname" name="surname" type="text"
                                 placeholder="Surname">
                         </div>
 
-                        <label for="email"></label>
+                        <label for="email" class="text--s">Email</label>
                         <input class="form__input body" id="email" name="email" type="email" placeholder="E-mail">
 
-                        <label for="message"></label>
+                        <label for="message" class="text--s">Message</label>
                         <input class="form__input body" id="message" name="message" type="text" placeholder="Message">
 
                         <div class="flex-row">
@@ -198,7 +208,7 @@
                             <input type="checkbox" id="privacy" name="privacy">
                             <span class="text--s">I have read and accept the <b>privacy policy</b></span>
                         </div>
-                        <input type="submit" value="Send" class="btn">
+                        <input type="submit" value="Send" class="btn" title="Send Form">
                     </form>
                 </div>
             </div>
